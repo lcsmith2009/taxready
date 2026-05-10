@@ -12,60 +12,66 @@
       <p class="badge">DIY Tax Prep Assistant</p>
       <h1>TaxReady</h1>
       <p>Your beginner-friendly tax prep organizer.</p>
+
       <button onclick="startChecklist()">
-  Start My Tax Checklist
-</button>
+        Start My Tax Checklist
+      </button>
+    </section>
 
-<section id="quiz" class="quiz hidden">
-  <h2>Tax Profile</h2>
+    <section id="quiz" class="quiz hidden step-card">
+      <h2>Step 1: Tax Profile</h2>
 
-  <label>Filing Status</label>
-  <select id="filingStatus">
-    <option>Single</option>
-    <option>Married Filing Jointly</option>
-    <option>Head of Household</option>
-  </select>
+      <label>Filing Status</label>
+      <select id="filingStatus">
+        <option>Single</option>
+        <option>Married Filing Jointly</option>
+        <option>Head of Household</option>
+      </select>
 
-  <label>Did you have W-2 income?</label>
-  <select id="w2Income">
-    <option>Yes</option>
-    <option>No</option>
-  </select>
+      <label>Did you have W-2 income?</label>
+      <select id="w2Income">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
 
-  <label>Did you have self-employment income?</label>
-  <select id="selfEmployment">
-    <option>Yes</option>
-    <option>No</option>
-  </select>
+      <label>Did you have self-employment income?</label>
+      <select id="selfEmployment">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
 
-  <button class="secondary-btn" onclick="generateChecklist()">
-    Generate My Checklist
-  </button>
-</section>
+      <button class="secondary-btn" onclick="generateChecklist()">
+        Continue
+      </button>
+    </section>
 
-<section id="results" class="results hidden">
-  <h2>Your TaxReady Checklist</h2>
-  <ul id="checklistItems"></ul>
-</section>
-      <section class="estimator">
-  <h2>Simple Refund Estimator</h2>
+    <section id="results" class="results hidden step-card">
+      <h2>Step 2: Your TaxReady Checklist</h2>
+      <ul id="checklistItems"></ul>
 
-  <label>Total income</label>
-  <input type="number" id="income" placeholder="Example: 45000" />
+      <button class="secondary-btn" onclick="showEstimator()">
+        Continue to Refund Estimator
+      </button>
+    </section>
 
-  <label>Federal tax already withheld</label>
-  <input type="number" id="withheld" placeholder="Example: 4200" />
+    <section id="estimator" class="estimator hidden step-card">
+      <h2>Step 3: Simple Refund Estimator</h2>
 
-  <button class="secondary-btn" onclick="estimateRefund()">
-    Estimate Refund or Balance
-  </button>
+      <label>Total income</label>
+      <input type="number" id="income" placeholder="Example: 45000" />
 
-  <p id="estimateResult" class="estimate-result"></p>
+      <label>Federal tax already withheld</label>
+      <input type="number" id="withheld" placeholder="Example: 4200" />
 
-  <p class="small-note">
-    This is a simple educational estimate only. It is not a final tax calculation.
-  </p>
-      </section>
+      <button class="secondary-btn" onclick="estimateRefund()">
+        Estimate Refund or Balance
+      </button>
+
+      <p id="estimateResult" class="estimate-result"></p>
+
+      <p class="small-note">
+        This is a simple educational estimate only. It is not a final tax calculation.
+      </p>
     </section>
   </main>
 
