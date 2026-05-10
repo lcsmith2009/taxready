@@ -12,7 +12,32 @@
       <p class="badge">DIY Tax Prep Assistant</p>
       <h1>TaxReady</h1>
       <p>Your beginner-friendly tax prep organizer.</p>
-      <button>Start My Tax Checklist</button>
+      <button onclick="startChecklist()">
+  Start My Tax Checklist
+</button>
+
+<section id="quiz" class="quiz hidden">
+  <h2>Tax Profile</h2>
+
+  <label>Filing Status</label>
+  <select>
+    <option>Single</option>
+    <option>Married Filing Jointly</option>
+    <option>Head of Household</option>
+  </select>
+
+  <label>Did you have W-2 income?</label>
+  <select>
+    <option>Yes</option>
+    <option>No</option>
+  </select>
+
+  <label>Did you have self-employment income?</label>
+  <select>
+    <option>Yes</option>
+    <option>No</option>
+  </select>
+</section>
     </section>
   </main>
 
