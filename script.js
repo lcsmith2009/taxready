@@ -32,3 +32,26 @@ function generateChecklist() {
 
   results.classList.remove("hidden");
 }
+
+function estimateRefund() {
+  const income =
+    Number(document.getElementById("income").value);
+
+  const withheld =
+    Number(document.getElementById("withheld").value);
+
+  const estimatedTax = income * 0.12;
+
+  const difference = withheld - estimatedTax;
+
+  const result =
+    document.getElementById("estimateResult");
+
+  if (difference > 0) {
+    result.innerText =
+      `Estimated Refund: $${difference.toFixed(2)}`;
+  } else {
+    result.innerText =
+      `Estimated Balance Due: $${Math.abs(difference).toFixed(2)}`;
+  }
+}
