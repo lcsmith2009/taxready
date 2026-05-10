@@ -79,3 +79,29 @@ button {
   border: 1px solid #ccc;
   font-size: 16px;
 }
+
+.secondary-btn {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.results {
+  background: white;
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.results h2 {
+  margin-bottom: 20px;
+}
+
+.results ul {
+  padding-left: 20px;
+}
+
+.results li {
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
