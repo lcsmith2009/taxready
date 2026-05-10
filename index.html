@@ -20,23 +20,32 @@
   <h2>Tax Profile</h2>
 
   <label>Filing Status</label>
-  <select>
+  <select id="filingStatus">
     <option>Single</option>
     <option>Married Filing Jointly</option>
     <option>Head of Household</option>
   </select>
 
   <label>Did you have W-2 income?</label>
-  <select>
+  <select id="w2Income">
     <option>Yes</option>
     <option>No</option>
   </select>
 
   <label>Did you have self-employment income?</label>
-  <select>
+  <select id="selfEmployment">
     <option>Yes</option>
     <option>No</option>
   </select>
+
+  <button class="secondary-btn" onclick="generateChecklist()">
+    Generate My Checklist
+  </button>
+</section>
+
+<section id="results" class="results hidden">
+  <h2>Your TaxReady Checklist</h2>
+  <ul id="checklistItems"></ul>
 </section>
     </section>
   </main>
