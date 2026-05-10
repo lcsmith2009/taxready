@@ -33,6 +33,11 @@ function generateChecklist() {
   results.classList.remove("hidden");
 }
 
+function showEstimator() {
+  const estimator = document.getElementById("estimator");
+  estimator.classList.remove("hidden");
+}
+
 function estimateRefund() {
   const income =
     Number(document.getElementById("income").value);
